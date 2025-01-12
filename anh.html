@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu chứng nhận bé ngoan</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fcd7f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .certificate {
+            background-color: #fff;
+            width: 600px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #ff99cc;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #ff66b2;
+            margin: 0;
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .name {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff3399;
+            margin: 10px 0;
+        }
+
+        .footer p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 20px 0 5px;
+        }
+
+        .footer h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff66cc;
+        }
+
+        /* Hiệu ứng trái tim rơi */
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ff66cc;
+            clip-path: polygon(50% 0%, 100% 30%, 80% 100%, 50% 80%, 20% 100%, 0% 30%);
+            animation: fall 5s infinite ease-in-out;
+        }
+
+        .heart:nth-child(2) {
+            width: 15px;
+            height: 15px;
+            background-color: #ff99cc;
+            animation-duration: 6s;
+            left: 20%;
+            animation-delay: 1s;
+        }
+
+        .heart:nth-child(3) {
+            width: 25px;
+            height: 25px;
+            background-color: #ff3399;
+            left: 80%;
+            animation-duration: 4s;
+        }
+
+        .heart:nth-child(4) {
+            width: 10px;
+            height: 10px;
+            background-color: #ff66b2;
+            left: 50%;
+            animation-duration: 7s;
+            animation-delay: 2s;
+        }
+
+        @keyframes fall {
+            0% {
+                top: -10%;
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+
+            100% {
+                top: 110%;
+                opacity: 0;
+                transform: translateX(30px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="certificate">
+        <div class="header">
+            <h1>Phiếu Chứng Nhận Bé Ngoan</h1>
+        </div>
+        <div class="content">
+            <p>Xin chân thành khen tặng người con gái xinh đẹp nhất, đáng yêu nhất</p>
+            <h2 class="name">Nguyễn Thị Ngọc Anh</h2>
+            <p>Người đã luôn bên cạnh, làm cho trái tim anh rung động từng ngày. Em là thiên thần nhỏ trong lòng anh, và
+                hôm nay anh chính thức trao cho em danh hiệu "Bé Ngoan Nhất Quả Đất", vì tất cả tình yêu và sự ngọt ngào
+                em đã dành cho anh. iu em Nguyễn Thị Ngọc Ánh <3< /p>
+        </div>
+        <div class="footer">
+            <p>Người trao chứng nhận với tất cả trái tim:</p>
+            <h3>Trần Chiến Thịnh</h3>
+        </div>
+    </div>
+
+    <!-- Trái tim rơi -->
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+</body>
+
+</html>
